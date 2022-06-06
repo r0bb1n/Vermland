@@ -1,0 +1,11 @@
+.artists {
+    background-color: #1b263b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffbe0b;
+
+    li {
+        border-bottom: 5px solid aquamarine;
+    }
+}

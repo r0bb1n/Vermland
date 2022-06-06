@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&family=Roboto:wght@700&display=swap');
+
+a {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+}
+
+.home__banner, li {
+    font-family: 'Koulen', cursive;
+    font-size: 35px;
+}
+
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 35px; 
+    }
+
+    li {
+        font-size: 25px;
+    }
+}
+
+p {
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+}

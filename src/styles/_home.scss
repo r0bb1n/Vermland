@@ -1,0 +1,84 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    &__banner {
+        background-color: aquamarine;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    &__text {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: #ffbe0b;
+        width: 100%;
+
+        span {
+            color: aquamarine;
+        }
+    }
+
+    .hero {
+        background: url(../images/greenneon.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home__text {
+        height: 40vh;
+    }
+}
+
+
+
+.home__scroll {
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+    } to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    } to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+    } to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home__banner {
+        display: none;
+    }
+}

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&family=Roboto:wght@700&display=swap");
+nav {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav a {
+  color: white;
+  padding: 10px;
+}
+nav a:hover {
+  color: aquamarine;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+}
+
+.home__banner, li {
+  font-family: "Koulen", cursive;
+  font-size: 35px;
+}
+
+h1, h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  h1, h2 {
+    font-size: 35px;
+  }
+
+  li {
+    font-size: 25px;
+  }
+}
+p {
+  font-family: "Koulen", cursive;
+  font-size: 25px;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home__banner {
+  background-color: aquamarine;
+  width: 100%;
+  text-align: center;
+}
+.home__text {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #ffbe0b;
+  width: 100%;
+}
+.home__text span {
+  color: aquamarine;
+}
+.home .hero {
+  background: url(../images/greenneon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 25vh;
+}
+
+@media screen and (max-width: 600px) {
+  .home__text {
+    height: 40vh;
+  }
+}
+.home__scroll {
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .home__banner {
+    display: none;
+  }
+}
+.artists {
+  background-color: #1b263b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffbe0b;
+}
+.artists li {
+  border-bottom: 5px solid aquamarine;
+}
